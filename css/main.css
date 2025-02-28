@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #003767;
+}
+
+:root {
+  font-size: 16px;
+}
+
+body {
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  background: linear-gradient(rgb(0, 0, 100), rgb(0, 132, 172));
+  color: white;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+}
+
+/* HOT HOUSE HOME TEXT */
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/* PAGE TITLE */
+h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h1 a:hover,
+h2 a:hover {
+  opacity: 0.5;
+}
+
+/* PRODUCT TITLE */
+h3 {
+  font-size: 26px;
+  font-weight: 500;
+  margin: 12px 0 12px 0;
+}
+
+/* SHOP TEXT */
+h4 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 20px;
+  white-space: pre-line;
+}
+
+a {
+  text-decoration: none;
+  display: inline block;
+  color: white;
+  cursor: pointer;
+}
+
+a:visited {
+  color: white;
+}
+
+.container {
+  perspective: 500px;
+}
+
+.rotating-image {
+  width: 500px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  transform-style: preserve-3d;
+  animation: rotateY 7s infinite linear;
+  margin: 80px 0 100px 0;
+}
+
+@keyframes rotateY {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
